@@ -1,0 +1,25 @@
+@import "theme";
+
+.page {
+    &.green {
+        background-color: $forest-green;
+
+        .background-circle {
+            background-color: $light-forest-green;
+        }
+        
+        nav {
+            background-color: $dark-forest-green;
+
+            @media screen and (max-width: $tablet-md) { 
+                .navigation {
+                    background-color: $dark-forest-green;
+                }
+            }            
+        }
+
+        footer {
+            background-color: $dark-forest-green;
+        }
+    }
+}

@@ -37,6 +37,11 @@ button:hover {
   color: #000;
 }
 
+em {
+  font-size: 14px;
+  font-weight: 100;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -158,6 +163,13 @@ nav .navigation {
   padding: 0;
   margin: 0;
 }
+nav .navigation-logo {
+  font-weight: 100;
+  font-size: 24px;
+}
+nav .navigation-logo:hover {
+  color: #ffffff;
+}
 
 @media screen and (max-width: 820px) {
   nav svg {
@@ -230,7 +242,8 @@ nav .navigation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 100;
   }
   nav .navigation-toggle .navigation a {
     color: #ffffff;
@@ -264,26 +277,25 @@ nav .navigation {
   margin: 25px 0;
 }
 .grid-item {
-  background-color: #67706A;
+  background-color: #ffffff;
   height: 250px;
 }
 @media screen and (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(2, auto);
-    width: calc(100% - 50px);
+    width: calc(100% - 20px);
   }
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 480px) {
   .grid {
     grid-template-columns: repeat(1, auto);
-    width: calc(100% - 50px);
   }
 }
 
-.home h1 {
+.home .hero h1 {
   font-size: 10rem;
 }
-.home h2 {
+.home .hero h2 {
   font-weight: 100;
 }
 
@@ -311,6 +323,24 @@ nav .navigation {
   .capabilities .content {
     width: 100%;
   }
+}
+
+.page.green {
+  background-color: #616A64;
+}
+.page.green .background-circle {
+  background-color: #67706A;
+}
+.page.green nav {
+  background-color: #4e5550;
+}
+@media screen and (max-width: 820px) {
+  .page.green nav .navigation {
+    background-color: #4e5550;
+  }
+}
+.page.green footer {
+  background-color: #4e5550;
 }
 
 /*# sourceMappingURL=main.css.map */
