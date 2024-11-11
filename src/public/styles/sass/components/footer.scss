@@ -1,0 +1,23 @@
+@import "../default/theme";
+
+footer {
+    background-color: $dark-tan;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+
+    .copyright {
+        color: #fff;
+
+        &:before {
+            content: "©";
+            margin-right: 0.25em;
+        }
+    }
+
+    @media screen and (min-width: $mobile-lg) {
+        flex-direction: row;
+    }
+}

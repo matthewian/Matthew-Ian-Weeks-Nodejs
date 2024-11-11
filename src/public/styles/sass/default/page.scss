@@ -1,0 +1,52 @@
+@import "theme";
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+
+        .hero {        
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;        
+        }   
+    
+        h1 {
+            color: $white;
+            font-size: $font-size-xl;
+            font-weight: 100;
+            //text-shadow: 20px 20px 20px #000;
+        }
+    
+        h2 {        
+            color: $white;
+            font-weight: 100;
+            margin: 0;
+            //text-shadow: 20px 20px 20px #000;
+        }
+
+        @media screen and (max-width: $tablet-md) {
+            .hero {
+                text-align: center;
+
+                h1 {
+                    font-size: $font-size-lg;
+                }
+        
+                h2 {
+                    font-size: $font-size-md;
+                }
+            }
+        }
+
+        @media screen and (max-width: $tablet-lg) {
+            padding: 0 1rem;
+        }
+    }
+}

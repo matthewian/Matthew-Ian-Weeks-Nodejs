@@ -1,0 +1,34 @@
+@import "../default/theme";
+
+.padding {
+    padding: $spacing;
+}
+
+.button {
+    color: $white;
+    background-color: $black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all .22s ease;
+    
+    &:hover {
+        background-color: $black;
+    }
+}
+
+.background-circle {
+    background-color: $light-tan;
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+    position: fixed;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}

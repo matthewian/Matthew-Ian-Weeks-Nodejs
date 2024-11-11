@@ -1,0 +1,26 @@
+@import "../default/theme";
+
+.grid {
+    z-index: 2;
+    display: grid;
+    grid-gap: $spacing;        
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
+    max-width: 1250px;
+    margin: $spacing 0;
+
+    &-item {
+        background-color: $light-forest-green;
+        height: 250px;        
+    }
+
+    @media screen and (max-width: $tablet-lg) {
+        grid-template-columns: repeat(2, auto);
+        width: calc(100% - 50px);
+    }
+
+    @media screen and (max-width: $tablet-md) {
+        grid-template-columns: repeat(1, auto);
+        width: calc(100% - 50px);
+    }
+}
