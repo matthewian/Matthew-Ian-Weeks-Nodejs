@@ -1,0 +1,50 @@
+@import "../default/theme";
+
+.form {
+    margin-top: $spacing;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing;
+        min-width: 400px;
+
+        input, textarea {
+            padding: 10px $spacing;            
+            border-radius: 10px;
+            border: none;
+            color: $white;
+            background-color: $dark-forest-green;
+            transition: all 0.25s ease;
+            font-family: inherit;
+            font-size: $font-size-sm;
+            font-weight: 100;
+
+            &:focus-visible {
+                outline: none;
+                box-shadow: 5px 10px 20px 0 rgba(0,0,0,.2);                
+            }
+        }
+
+        button {
+            padding: 10px $spacing;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            background-color: $dark-forest-green;
+            font-family: inherit;
+            font-size: $font-size-sm;
+            font-weight: 100;
+            transition: all 0.25s ease;
+            box-shadow: 5px 10px 20px 0 rgba(0,0,0,.2);
+
+            &:hover {
+                box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+            }
+        }
+
+        ::placeholder {
+            color: $white;
+        }
+    }
+}

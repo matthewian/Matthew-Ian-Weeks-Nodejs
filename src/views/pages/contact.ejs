@@ -15,16 +15,31 @@
                 <div class="hero"
                      data-aos="fade-up"
                      data-aos-duration="3000">
-                    <h1>contact ashly</h1>
-                    <h2>
-                        <a href="mailto:ashlyfayeanothony@gmail.com?subject=Contact%20Ashly%20Faye%20Photography&body=I%20am%20interested%20in%20your%20photography%21">ashlyfayeanthony@gmail.com</a>
-                    </h2>
-                    <h2>
-                        <a href="tel:702-533-1305">702.533.1305</a>
-                    </h2>
+                    <h1>Get in touch</h1>
+                    <div class="form">
+                        <!-- https://web3forms.com/ -->
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Replace with your Access Key -->
+                            <input type="hidden" name="access_key" value="159051fb-fa17-448a-948e-698d65792790">
+                            <input type="hidden" name="subject" value="Ashly Faye Photography Message">
+
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="email" name="email" placeholder="Email">
+                            <textarea name="message" placeholder="Message"></textarea>
+
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <!-- Form Submission Redirect -->
+                            <input type="hidden" name="redirect" value="https://ashlyfayeanthony.com/thanks">
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>                
             </main>
             <%- include('../components/footer') %>
         </div>
     </body>
+    <script>window.onload = function() { document.getElementById("form").reset(); };</script>
 </html>
