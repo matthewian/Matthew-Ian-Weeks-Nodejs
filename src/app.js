@@ -7,9 +7,10 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => res.render('pages/home', { }))
 app.get('/about', (req, res) => res.render('pages/about', { }))
-app.get('/capabilities', (req, res) => res.render('pages/capabilities', { }))
+app.get('/pricing', (req, res) => res.render('pages/pricing', { }))
 app.get('/contact', (req, res) => res.render('pages/contact', { }))
 app.get('/gallery', (req, res) => res.render('pages/gallery', { }))
+app.get('/post', (req, res) => res.render('pages/post', { }))
 
 app.listen(port, () => {
     console.log(`App listening on port: ${port}`)
