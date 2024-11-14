@@ -4,8 +4,9 @@
   "description": "node version: 23.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "sass": "sass src/public/styles/sass/main.scss src/public/styles/main.css -w"
+    "start": "node src/app.js",
+    "sass": "sass src/public/styles/sass/main.scss src/public/styles/main.css -w",
+    "html": "npm exec -- ejs ./src/views/pages/home.ejs ./home-test.html"
   },
   "author": "Matt Weeks",
   "license": "ISC",

@@ -57,6 +57,7 @@ em {
   justify-content: center;
   align-items: center;
   flex: 1;
+  margin: 25px 0;
 }
 .page main .hero {
   flex-direction: column;
@@ -317,12 +318,12 @@ nav .navigation-logo:hover {
 
 .form {
   margin-top: 25px;
+  width: 100%;
 }
 .form form {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  min-width: 400px;
 }
 .form form input, .form form textarea {
   padding: 10px 25px;

@@ -2,12 +2,12 @@
 
 .form {
     margin-top: $spacing;
+    width: 100%;
 
     form {
         display: flex;
         flex-direction: column;
-        gap: $spacing;
-        min-width: 400px;
+        gap: $spacing;        
 
         input, textarea {
             padding: 10px $spacing;            
