@@ -292,10 +292,21 @@ nav .navigation-logo:hover {
   background-color: #4e5550;
   box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
 }
+.grid-item:first-child {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+.grid-item:last-child {
+  grid-column: 2/span 2;
+}
 @media screen and (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(2, auto);
     width: calc(100% - 20px);
+  }
+  .grid .grid-item {
+    grid-column: auto;
+    grid-row: auto;
   }
 }
 @media screen and (max-width: 480px) {
