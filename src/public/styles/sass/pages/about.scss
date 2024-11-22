@@ -1,0 +1,39 @@
+@import "../default/theme";
+
+main.about {
+    flex-direction: column;    
+
+    .hero {                
+    
+        img {
+            object-fit: cover;
+            height: 500px;
+            border-radius: 10px;
+        }
+    }    
+
+    .content {
+        max-width: $tablet-sm;        
+        color: $white;
+        text-align: center;
+
+        h1 {
+            margin: $spacing 0;
+        }
+
+        ul {
+            list-style: none;
+            font-size: $font-size-md;
+
+            li {
+                margin-bottom: $spacing;
+            }
+        }
+    }
+}
+
+.about-container {
+    background-position: top !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}

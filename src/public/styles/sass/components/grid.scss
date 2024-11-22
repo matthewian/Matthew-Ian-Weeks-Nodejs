@@ -6,12 +6,15 @@
     grid-gap: $spacing;        
     grid-template-columns: repeat(3, auto);
     width: 100%;
-    max-width: 1250px;
+    max-width: 1400px;
     margin: $spacing 0;
 
     &-item {
         background-color: $white;
-        min-height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 500px;
         border-radius: 10px;
         transition: all 0.25s ease;
         box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
@@ -19,15 +22,6 @@
         &:hover {
             background-color: $dark-forest-green;
             box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
-        }
-
-        &:first-child {
-            grid-column: 1 / span 2; 
-            grid-row: 1 / span 2
-        }
-
-        &:last-child {
-            grid-column: 2 / span 2;
         }
     }
 

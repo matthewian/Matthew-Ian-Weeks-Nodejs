@@ -1,7 +1,7 @@
 @import "../default/theme";
 
 nav {
-    background-color: $dark-forest-green;
+    //background-color: $dark-forest-green;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -30,7 +30,8 @@ nav {
 
         &-logo {
             font-weight: 100;
-            font-size: $font-size-md;
+            font-size: $font-size-mdlg;
+            z-index: 10;
 
             &:hover {
                 color: $white;
@@ -114,10 +115,10 @@ nav {
 
             .navigation {
                 position: fixed;
-                height: calc(100vh - 82px);
+                height: 100vh;
                 width: 100vw;
                 right: 0;                
-                margin-top: 27px;                
+                top: 0;
                 background: $dark-forest-green;                
                 -webkit-font-smoothing: antialiased;
                 transform-origin: 0% 0%;
