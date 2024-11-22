@@ -30,9 +30,6 @@ a {
   transition: all 0.2s ease;
   font-family: inherit;
 }
-a:hover {
-  color: #000;
-}
 
 button {
   font-family: inherit;
@@ -282,12 +279,7 @@ nav .navigation-logo:hover {
   background-position: center;
   min-height: 500px;
   border-radius: 10px;
-  transition: all 0.25s ease;
   box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, 0.2);
-}
-.grid-item:hover {
-  background-color: #4e5550;
-  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 1024px) {
   .grid {

@@ -15,14 +15,8 @@
         background-repeat: no-repeat;
         background-position: center;
         min-height: 500px;
-        border-radius: 10px;
-        transition: all 0.25s ease;
+        border-radius: 10px;        
         box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
-
-        &:hover {
-            background-color: $dark-forest-green;
-            box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
-        }
     }
 
     @media screen and (max-width: $tablet-lg) {
