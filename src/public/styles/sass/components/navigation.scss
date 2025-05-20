@@ -1,7 +1,6 @@
 @import "../default/theme";
 
 nav {
-    //background-color: $dark-forest-green;
     display: flex;
     justify-content: space-between;
     align-items: center;    
@@ -73,7 +72,7 @@ nav {
                 height: 4px;
                 margin-bottom: 5px;
                 position: relative;            
-                background: $white;
+                background: $dark-blue;
                 border-radius: 3px;            
                 z-index: 1;            
                 transform-origin: 4px 0px;            
@@ -95,7 +94,7 @@ nav {
                     & ~ .line {
                         opacity: 1;
                         transform: rotate(45deg) translate(-2px, -1px);
-                        background: $white;
+                        background: $dark-blue;
                     }
     
                     & ~ .line:nth-last-child(3) {
@@ -119,7 +118,7 @@ nav {
                 width: 100vw;
                 right: 0;                
                 top: 0;
-                background: $dark-forest-green;                
+                background: $background;                
                 -webkit-font-smoothing: antialiased;
                 transform-origin: 0% 0%;
                 transform: translateX(100%);
@@ -131,7 +130,7 @@ nav {
                 font-weight: 100;
 
                 a {
-                    color: $white;
+                    color: $dark-blue;
                 }
             }
         }

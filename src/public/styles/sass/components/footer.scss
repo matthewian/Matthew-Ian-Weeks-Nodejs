@@ -9,7 +9,7 @@ footer {
     z-index: 5;
 
     .copyright {
-        color: #fff;
+        color: $dark-blue;
 
         &:before {
             content: "©";
